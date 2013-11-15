@@ -2,19 +2,29 @@ module.exports = function(grunt) {
 
   grunt.initConfig({
     favicons: {
+
       options: {
         trueColor: true,
         precomposed: true,
-        appleTouchBackgroundColor: "#e2b2c2",
         windowsTile: true,
-        tileBlackWhite: false,
+        tileBlackWhite: true,
         tileColor: "auto",
-        html: 'build/out/index.html',
-        HTMLPrefix: "/images/icons/"
       },
-      icons: {
-        src: 'src/favicon.png',
-        dest: 'build/images/icons'
+      white: {
+        src: 'src/favicon-white.png',
+        dest: 'build/white',
+        options: {
+          html: 'build/white.html',
+          HTMLPrefix: "/white/"
+        }
+      },
+      blue: {
+        src: 'src/favicon-blue.png',
+        dest: 'build/blue',
+        options: {
+          html: 'build/blue.html',
+          HTMLPrefix: "/blue/"
+        }
       }
     },
   });
