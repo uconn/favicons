@@ -1,4 +1,4 @@
 # Favicons for UConn Websites
 
-[Download the latest build](https://github.com/uconn/favicons/archive/master.zip)
+[This repo has relocated to BitBucket](https://bitbucket.org/ucomm/favicons).
 
